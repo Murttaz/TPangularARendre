@@ -1,0 +1,10 @@
+
+<h2>Selectionnez un utilisateur</h2>
+
+<app-user-list (selectedUser)="onUserSelected($event)"></app-user-list>
+
+<ng-container *ngIf="isUserSelected">
+    <app-todos></app-todos>
+    <app-category></app-category>
+    <app-todo-tables [todos]="todos"></app-todo-tables>
+</ng-container>

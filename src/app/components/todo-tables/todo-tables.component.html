@@ -1,0 +1,51 @@
+<h2>A faire:</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Text</th>
+      <th>Is Editable</th>
+      <th>Done</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let todo of notDoneTodos">
+      <td>{{ todo.id }}</td>
+      <td>{{ todo.text }}</td>
+      <td>{{ todo._isEditable }}</td>
+      <td>{{ todo.done }}</td>
+      <td>
+        <button (click)="validate(todo)">Valider</button>
+        <button (click)="deleteTodo(id)">Supprimer</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Faits:</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Text</th>
+      <th>Is Editable</th>
+      <th>Done</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let todo of doneTodos">
+      <td>{{ todo.id }}</td>
+      <td>{{ todo.text }}</td>
+      <td>{{ todo._isEditable }}</td>
+      <td>{{ todo.done }}</td>
+      <td>
+        <button (click)="deleteTodo(id)">Supprimer</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+

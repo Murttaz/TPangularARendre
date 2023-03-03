@@ -1,0 +1,4 @@
+catégorie
+<select [(ngModel)]="selectedCategory">
+    <option *ngFor="let categorie of categories | keyvalue" [value]="categorie.value">{{categorie.key}}</option>
+</select>

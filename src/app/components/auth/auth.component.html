@@ -1,0 +1,27 @@
+
+<h1>Bienvenue sur Gestion des taches</h1>
+<br>
+<br>
+<h3>merci de vous authentifier:</h3>
+<br>
+<form #formAuth="ngForm" (ngSubmit)="authentification(formAuth)">
+<label>nom</label> : 
+<input 
+    type="text" 
+    id="namePerso" 
+    name="namePerso"
+    [(ngModel)]="namePerso"
+    required>
+<br>
+<label>mot de passe</label> :
+<input 
+    type="password" 
+    id ="password"
+    name="password"
+    [(ngModel)]="password"
+    required>
+<br>
+<button type="submit" [disabled]="!formAuth.valid">Connexion</button> 
+
+
+</form>

@@ -1,0 +1,57 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "namePerso": "Drooppy",
+      "password": "yipee"
+    },
+    {
+      "id": 2,
+      "namePerso": "Lopez",
+      "password": "mangezvosmorts"
+    },
+    {
+      "id": 3,
+      "namePerso": "N0000by",
+      "password": "fleche44"
+    }
+  ],
+  "todo": [
+    {
+      "id": 1,
+      "text": "be happy",
+      "isEditable": true,
+      "done": true
+    },
+    {
+      "id": 2,
+      "text": "get an haircut",
+      "isEditable": true,
+      "done": false
+    },
+    {
+      "id": 3,
+      "text": "manger ses morts",
+      "isEditable": true,
+      "done": false
+    },
+    {
+      "id": 4,
+      "text": "rencontrer les autres lopez ",
+      "isEditable": true,
+      "done": false
+    },
+    {
+      "id": 5,
+      "text": "apprendre à ne pas rager",
+      "isEditable": true,
+      "done": false
+    },
+    {
+      "id": 6,
+      "text": "avoir une copine",
+      "isEditable": true,
+      "done": false
+    }
+  ]
+}
